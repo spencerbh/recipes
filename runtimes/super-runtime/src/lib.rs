@@ -349,6 +349,10 @@ impl vec_set::Trait for Runtime {
 	type Event = Event;
 }
 
+impl shared_balance for Runtime {
+	type Event = Event;
+}
+
 // ---------------------- End of Recipe Pallet Configurations ----------------------
 
 construct_runtime!(
@@ -387,6 +391,7 @@ construct_runtime!(
 		StorageCache: storage_cache::{Module, Call, Storage, Event<T>},
 		StructStorage: struct_storage::{Module, Call, Storage, Event<T>},
 		VecSet: vec_set::{Module, Call, Storage, Event<T>},
+		SharedBalance: shared_balance::{Module, Call, Storage, Event<T>},
 	}
 );
 

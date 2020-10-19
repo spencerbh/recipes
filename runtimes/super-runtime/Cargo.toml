@@ -63,6 +63,8 @@ simple-map = { path = "../../pallets/simple-map", default-features = false }
 storage-cache = { path = "../../pallets/storage-cache", default-features = false }
 struct-storage = { path = "../../pallets/struct-storage", default-features = false }
 vec-set = { path = "../../pallets/vec-set", default-features = false }
+shared-balance = { path = "../../pallets/shared-balance", default-features = false }
+
 
 [build-dependencies]
 wasm-builder-runner = { package = "substrate-wasm-builder-runner", version = "1.0.4" }
@@ -111,4 +113,5 @@ std = [
 	"timestamp/std",
 	"transaction-payment/std",
 	"vec-set/std",
+	"shared-balance/std",
 ]
